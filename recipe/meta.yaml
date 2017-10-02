@@ -1,8 +1,8 @@
 {%set name = "Flask-Moment" %}
-{%set version = "0.5.1" %}
+{%set version = "0.5.2" %}
 {%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "4e36dbf5f496522f497a8f1572a33ad9101e34ecfb063e481a5fac29716af48c" %}
+{%set hash_val = "20d86b88a156eeda040530b329dbf996e731576ead295ea079a62fc0915b21d8" %}
 {%set build_num = "0" %}
 
 package:
