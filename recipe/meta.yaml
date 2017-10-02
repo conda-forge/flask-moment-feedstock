@@ -1,21 +1,22 @@
-{%set name = "Flask-Moment" %}
-{%set version = "0.5.1" %}
-{%set compress_type = "tar.gz" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "4e36dbf5f496522f497a8f1572a33ad9101e34ecfb063e481a5fac29716af48c" %}
-{%set build_num = "0" %}
+{% set name = "Flask-Moment" %}
+{% set version = "0.5.2" %}
+{% set bundle = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash = "20d86b88a156eeda040530b329dbf996e731576ead295ea079a62fc0915b21d8" %}
+{% set build = 0 %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
-  {{ hash_type }}: {{ hash_val }}
+  fn: {{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
+  {{ hash_type }}: {{ hash }}
 
 build:
-  number: {{ build_num }}
+  noarch: python
+  number: {{ build }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 
