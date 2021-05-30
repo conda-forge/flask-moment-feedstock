@@ -3,7 +3,7 @@
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
 {% set hash = "8379acdc9cda1227573ae52aac2e5b4b391e77ed300c70d49b0a929d0aa76680" %}
-{% set build = 0 %}
+{% set build = 1 %}
 
 package:
   name: {{ name|lower }}
@@ -22,12 +22,12 @@ build:
 
 requirements:
   build:
-    - python
+    - python >=3.6
     - setuptools
     - flask
 
   run:
-    - python
+    - python >=3.6
     - flask
 
 test:
@@ -45,3 +45,4 @@ about:
 extra:
   recipe-maintainers:
     - pmlandwehr
+    - jan-janssen
