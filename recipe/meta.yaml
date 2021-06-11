@@ -1,5 +1,5 @@
 {% set name = "Flask-Moment" %}
-{% set version = "0.11.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ff4cc0c4f8ec6798e19ba17fac409a8090f21677da6b21e3e1e4450344d8ed71
+  sha256: ab2bea04201992370b00acc2db759836e5687f045a2785abdd73979a8f0e78a6
 
 build:
   noarch: python
@@ -31,7 +31,7 @@ test:
     - flask_moment
   commands:
     - pip check
-  requires: 
+  requires:
     - pip
 
 about:
@@ -39,7 +39,7 @@ about:
   license: MIT
   license_file: LICENSE
   license_family: MIT
-  summary: 'Formatting of dates and times in Flask templates using moment.js.'
+  summary: Formatting of dates and times in Flask templates using moment.js.
   dev_url: http://github.com/miguelgrinberg/flask-moment/
 
 extra:
