@@ -1,0 +1,22 @@
+From 4d0f399706b79165d06a07db625f7254533bdcd2 Mon Sep 17 00:00:00 2001
+From: Jan Janssen <jan-janssen@users.noreply.github.com>
+Date: Fri, 11 Jun 2021 13:48:29 +0200
+Subject: [PATCH] Update setup.cfg
+
+---
+ setup.cfg | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/setup.cfg b/setup.cfg
+index 3d01893..0b2ec76 100644
+--- a/setup.cfg
++++ b/setup.cfg
+@@ -19,7 +19,7 @@ classifiers =
+ zip_safe = False
+ include_package_data = True
+ package_dir =
+-    = src
++    =src
+ packages = find:
+ python_requires = >=3.6
+ install_requires =
