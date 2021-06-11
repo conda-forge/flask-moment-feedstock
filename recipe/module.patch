@@ -1,0 +1,17 @@
+From 60241b8ead3736fcf2d8e65bda3bb1aa71c832dd Mon Sep 17 00:00:00 2001
+From: Jan Janssen <jan-janssen@users.noreply.github.com>
+Date: Fri, 11 Jun 2021 13:18:46 +0200
+Subject: [PATCH] Create __init__.py
+
+---
+ src/__init__.py | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 src/__init__.py
+
+diff --git a/src/__init__.py b/src/__init__.py
+new file mode 100644
+index 0000000..8b13789
+--- /dev/null
++++ b/src/__init__.py
+@@ -0,0 +1 @@
++
