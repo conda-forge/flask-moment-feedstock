@@ -1,5 +1,5 @@
 {% set name = "Flask-Moment" %}
-{% set version = "1.0.2" %}
+{% set version = "1.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1faf8fea08080d2396f0c878b92bd0429635977a8f96c553a0d43f15fd8d0213
+  sha256: d4048814645c7cc22e8edc7b31d1eb43e7ddeb9d7eba6dc8b670a1c1b197a258
 
 build:
   noarch: python
@@ -21,10 +21,10 @@ requirements:
     - python >=3.6
     - setuptools
     - flask
-
   run:
     - python >=3.6
     - flask
+    - packaging
 
 test:
   imports:
