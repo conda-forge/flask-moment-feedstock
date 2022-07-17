@@ -21,10 +21,10 @@ requirements:
     - python >=3.6
     - setuptools
     - flask
-
   run:
     - python >=3.6
     - flask
+    - packaging
 
 test:
   imports:
