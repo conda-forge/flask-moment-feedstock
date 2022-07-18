@@ -1,5 +1,5 @@
 {% set name = "Flask-Moment" %}
-{% set version = "1.0.3" %}
+{% set version = "1.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d4048814645c7cc22e8edc7b31d1eb43e7ddeb9d7eba6dc8b670a1c1b197a258
+  sha256: 161b0f473a7c46c1d46f9eadb807d56353bb28c00cc0ee34208c5b2ead9645c2
 
 build:
   noarch: python
